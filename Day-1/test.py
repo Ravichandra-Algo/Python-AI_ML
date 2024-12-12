@@ -143,3 +143,28 @@ print(f"Sum of the numbers {sum(flattenArray)}")
 duplicates = [1,2,5,5,3,3,4]
 
 print(f"unique elements {list(set(duplicates))}")
+
+
+#----------------------------------------------------------------
+
+palidromeNumbers = 12321
+
+def isNumberPalindrome(number):
+    number_str = str(number)
+    return number_str == number_str[::-1]
+
+print(f"is number palindrome: {isNumberPalindrome(palidromeNumbers)}")
+
+# bytes data type
+b2 = b'Hello'  
+print(type(b2)) 
+
+# bytearray data type (mutable)
+b3 = bytearray([66, 55, 56, 70])
+print(b3)
+
+print(type({"one", 654, 5+6j,})) #set type
+
+# tuple literal
+T1=(1,"Ravi",75.50, True)
+print (T1, type(T1))
