@@ -168,3 +168,45 @@ print(type({"one", 654, 5+6j,})) #set type
 # tuple literal
 T1=(1,"Ravi",75.50, True)
 print (T1, type(T1))
+
+
+a = 21
+b = 10
+if ( a == b ):
+   print ("a is equal to b")
+else:
+   print ("a is not equal to b")
+   
+mark = 51
+result = ""
+if mark < 10:
+    result = "Failed"
+elif mark > 10 or mark < 50:
+    result = "Passed"
+else:
+    result = 'Neither Passes nor failed'
+
+print(result)
+
+def weekday(n):
+   match n:
+      case 1: return "Monday"
+      case 2: return "Tuesday"
+      case 3: return "Wednesday"
+      case 4: return "Thursday"
+      case 5: return "Friday"
+      case 6: return "Saturday"
+      case 7: return "Sunday"
+      case _: return "Invalid day number"
+print (weekday(3))
+print (weekday(6))
+print (weekday(0))
+
+def hasAccess(user):
+   match user:
+      case "admin" | "manager": return "Full access"
+      case "Guest": return "Limited access"
+      case _: return "No access"
+print (hasAccess("manager"))
+print (hasAccess("Guest"))
+print (hasAccess("Ravi"))
